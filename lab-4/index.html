@@ -3,24 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet'>
-    <title>Madhava Mule's Resume</title>
-</head>
-   <footer>
-        <p>Last updated: 
-            <span id="lastModified"></span>
-        </p>
-    </footer>
-    <script type="text/javascript">
-         var x = document.lastModified;
-         document.getElementById('lastModified').textContent = x;
-    </script><style>
-         body {
+    <title>Lab 4 - CSS Styling</title>
+    <style>
+        body {
             font-family: 'Bangers', cursive;
             line-height: 1.6;
             margin: 20px;
             padding: 0;
-            background-color: #FFD700;
+            background-color: #d8dfe2;
         }
 
         section {
@@ -28,17 +18,17 @@
         }
 
         h1 {
-            color: #00008B;
+            color: #1a211f;
             font-size: 2em;
         }
 
         h2 {
-            color: #FF69B4;
+            color: #3e2b35;
             font-size: 1.5em;
         }
 
         h3 {
-            color: #777;
+            color: #777777;
             font-size: 1.2em;
         }
 
@@ -53,11 +43,11 @@
         }
 
         a {
-            color: #0077cc;
+            color: #2500cc;
         }
 
         footer {
-            background-color:#008000;
+            background-color:#727872;
             color: #fff;
             text-align: center;
             padding: 10px;
@@ -66,79 +56,117 @@
             width: 100%;
         }
     </style>
-
+</head>
 <body>
-    <section>
-        <h1>Madhava Mule</h1>
-        <p>Flagstaff, AZ 86001 | Email: <a href= mailto:mulemadhava@gmail.com>Click here to contact Madhava Reddy</a> <br> Phone: +1 210-606-0009</p>
-    </section>
+    <!-- Resume Content -->
+    <h1>VAMSI PULLAGURA</h1>
+    <p>Email: pullaguravamsi1326@gmail.com</p>
+    <p>Phone: +1 928-814-5670</p>
+    <p>Passport No.: V0503176</p>
+    <p>University Reg. No.: 6014374</p>
 
-    <section>
-        <h2>Objective</h2>
-        <p>Highly motivated Electronics and Communications Engineer with over 4 years of hands-on experience in Python, C programming, and data structures, seeking to leverage my technical and analytical skills in a dynamic environment. Currently expanding my expertise through an M.S. in Computer Science at Northern Arizona University, I aim to contribute innovative solutions to complex challenges in the tech industry.</p>
-    </section>
+    <h2>CAREER OBJECTIVE:</h2>
+    <p>Secure a responsible career opportunity to fully utilize my training and skills, while making a significant contribution to the success of the company.</p>
 
-    <section>
-        <h2>Education</h2>
-        <ul>
-            <li><strong>M.S. in Computer Science</strong>, Northern Arizona University, Flagstaff, AZ (Expected May 2025)</li>
-            <li><strong>B.Tech in Electronics and Communication Engineering</strong>, Andhra Loyola Institute of Engineering and Technology, Affiliated to JNTUK (June 2022)</li>
-        </ul>
-    </section>
+    <h2>EDUCATIONAL QUALIFICATIONS:</h2>
+    <table>
+        <tr>
+            <th>Course</th>
+            <th>Institution</th>
+            <th>Duration</th>
+            <th>CGPA</th>
+        </tr>
+        <tr>
+            <td>SSC</td>
+            <td>Z. P. High School, Machanapalli</td>
+            <td>2014-15</td>
+            <td>9.8</td>
+        </tr>
+        <tr>
+            <td>Intermediate</td>
+            <td>Sri Chaitanya Jr Kalasala, Vijayawada</td>
+            <td>2015-17</td>
+            <td>9.77</td>
+        </tr>
+        <tr>
+            <td>B. Tech (Under graduation)</td>
+            <td>Sastra University, Tamil Nadu</td>
+            <td>2018-22</td>
+            <td>7.76</td>
+        </tr>
+        <tr>
+            <td>Master of Science</td>
+            <td>Northern Arizona University, USA</td>
+            <td>2023-23</td>
+            <td>Currently pursuing</td>
+        </tr>
+    </table>
 
-    <section>
-        <h2>Professional Experience</h2>
-        <ul>
-            <li><strong>Machine Learning Intern</strong>, Info Logic Solutions (Aug 2022 - Jun 2023)</li>
-            <li><strong>Cyber Security Virtual Intern</strong>, CISCO Networking Academy (Mar 2021 - Jul 2021)</li>
-            <li><strong>Intern</strong>, Aspis Solution Limited, Bangalore, India (Sep 2020 - Oct 2021)</li>
-        </ul>
-    </section>
+    <h2>MAJOR PROJECT:</h2>
+    <h3>Title: Accurate Short Text Classification Using Bi-LSTM</h3>
+    <p>Description: In recent years, with the rapid development of the internet and social networks, more users began to freely express their opinions on web pages. Therefore, the big data of user comments is generated on the internet. With the explosive increasing of comments, it is difficult to analyze them manually. So, the main objective of the project is mining all these big comment of data through artificial intelligence technology is helpful; for timely understanding of network public opinion and this process is called sentiment analysis, a kind of text classification. To achieve this, we created a model that is trained with five different machine learning algorithms and finally we proved that model trained using bi-LSTM got higher accuracies than the remaining models.</p>
+    <p>Technologies used: Recurrent Neural Network (RNN), Long-short term memory (LSTM), Bi-directional Encoder Representation from Transformers (BERT), Support Vector Machine (SVM), Bi-directional Long Short-Term Memory (Bi-LSTM)</p>
 
-    <section>
-        <h2>Projects</h2>
-        <ul>
-            <li><strong>Automated Weather Prediction Model:</strong> Led the development of a Python-based model...</li>
-            <li><strong>Secure Chat Application:</strong> Contributed to the design and implementation...</li>
-        </ul>
-    </section>
+    <h2>TECHICAL SKILLS:</h2>
+    <ul id="tech-skills">
+        <li>Languages: C, Java, Python</li>
+        <li>Operating Systems: Windows, Linux</li>
+    </ul>
 
-    <article>
-        <h2>Certifications & Accomplishments</h2>
-        <ul>
-            <li>Certified Data Analyst (NPTEL)</li>
-            <li>Python Certification (INMOVIDA Tech)</li>
-        </ul>
-    </article>
+    <div class="employment">
+        <h2>PREVIOUS EMPLOYMENT:</h2>
+        <p>Company: Mphasis Private Ltd.</p>
+        <p>Role: Software Engineer</p>
+        <p>Description: I worked as a Java Full Stack Developer in some projects and dealt with frontend technologies like angular, bootstrap; backend technologies like spring frameworks for more than a year.</p>
+    </div>
 
-    <section>
-        <h2>Leadership & Volunteer Experience</h2>
-        <p>Led the cricket team to win district-level championships and organized multiple tech workshops...</p>
-    </section>
+    <h2>CERTIFICATIONS:</h2>
+    <ul id="certifications">
+        <li>Certified in Azure Fundamentals AZ-900 conducted Microsoft Inc.</li>
+        <li>Certified in Java Programming: Arrays, Lists and Structured data conducted by Coursera in 2020.</li>
+    </ul>
 
-    <section>
-        <h2>Skills</h2>
-        <p>Programming: Proficient in Python, C, and Data Structures...</p>
-    </section>
+    <h2>AREAS OF INTERESTS:</h2>
+    <ul id="interests">
+        <li>Programming</li>
+        <li>Surfing net</li>
+        <li>Travelling</li>
+    </ul>
 
-    <section>
-        <h2>Additional Information</h2>
-        <p>Languages Spoken: English, Telugu, Hindi...</p>
-    </section>
-</body>
-</html>
-<!DOCTYPE html>
-<html>
-<body>
-	<article>
-	<h3>Addendum Narrative</h3>
-<ul>
-    <li><strong>Font Choices:</strong> I opted for a clean and readable sans-serif font such as Arial for the main text to enhance readability. Headings use a bold sans-serif font like Helvetica to make them stand out.</li>
-    <li><strong>Headings and Text Sizes:</strong> Headings follow a hierarchical structure with <code>h1</code> as the main title and <code>h2</code> for section titles. The main text size is set to provide comfortable reading and better visual appeal.</li>
-    <li><strong>Color Choices:</strong> The color palette focuses on a professional and modern look. Dark gray is used for the main text, and headings have a slightly darker shade to emphasize their importance. Links are styled in a distinct color to catch the user's attention.</li>
-    <li><strong>Margins and Padding:</strong> The document as a whole has a minimal margin to provide a clean appearance. Headings and sections have specific padding to ensure adequate spacing between elements, contributing to a well-organized layout.</li>
-</ul>
+    <h2>PROFESSIONAL STRENGTHS:</h2>
+    <ul id="strengths">
+        <li>Hard work and dedication</li>
+        <li>Flexibility and Adaptability</li>
+        <li>Creative and a good team player</li>
+    </ul>
 
-	</article>
-</body>
-</html>
+    <h2>DECLARATION:</h2>
+    <p>I hereby declare that all the details furnished above are true to my knowledge and any discrepancies may be subject to enquiry.</p>
+
+    <p>Vamsi Pullagura</p>
+    <p>Flagstaff, Arizona United States of America</p>
+
+    <!-- Addendum -->
+<h2>Addendum:</h2>
+<p>Throughout the meticulous design process of this webpage, specific styling choices were carefully considered to enhance both aesthetics and user engagement.</p>
+
+<p>The font sizes were thoughtfully selected to establish a distinct hierarchy and guide the reader seamlessly through the content. The main heading, set at a commanding 2em, serves as a visual anchor, signaling the commencement of the resume. Subsequent headings, including those for career objectives, educational qualifications, and project details, were strategically sized at 1.5em and 1.2em, respectively, maintaining a structured and visually appealing flow.</p>
+
+<p>The primary body text, now enlarged to 1em, strikes a harmonious balance between readability and a modern, professional appearance. This increased size ensures that users can effortlessly absorb the information without any visual strain.</p>
+
+<p>Color choices remain intentional, with headings retaining a distinctive color palette, creating emphasis and capturing attention for crucial sections. The main text color maintains a classic dark gray (#444), providing optimal contrast against the background color of #d8dfe2, thereby contributing to an enjoyable and effortless reading experience.</p>
+
+<p>Margins and paddings have been meticulously adjusted to uphold a well-organized and visually pleasing layout. The overall design seeks to eliminate clutter and offers ample white space, thereby improving readability and aesthetic appeal.</p>
+
+<p>Furthermore, a footer has been thoughtfully incorporated, displaying the last modified date. This addition ensures users are informed about the most recent updates to the content, fostering transparency and enhancing the overall user experience.</p>
+
+<!-- Footer -->
+<footer>
+    <p>Last updated: 
+        <span id="lastModified"></span>
+    </p>
+</footer>
+<script type="text/javascript">
+     var x = document.lastModified;
+     document.getElementById('lastModified').textContent = x;
+</script>
