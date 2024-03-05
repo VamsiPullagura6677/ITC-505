@@ -20,6 +20,7 @@
         h1 {
             color: #1a211f;
             font-size: 2em;
+            text-align: center;
         }
 
         h2 {
@@ -42,22 +43,48 @@
             padding-left: 20px;
         }
 
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #727872;
+            color: #fff;
+        }
+
         a {
             color: #2500cc;
         }
 
         footer {
-            background-color:#727872;
+            background-color: #727872;
             color: #fff;
             text-align: center;
             padding: 10px;
-            position: fixed;
-            bottom: 0;
             width: 100%;
         }
     </style>
 </head>
 <body>
+    <!-- Last Updated Section -->
+    <footer>
+        <p>Last updated: 
+            <span id="lastModified"></span>
+        </p>
+    </footer>
+    <script type="text/javascript">
+         var x = document.lastModified;
+         document.getElementById('lastModified').textContent = x;
+    </script>
+
     <!-- Resume Content -->
     <h1>VAMSI PULLAGURA</h1>
     <p>Email: pullaguravamsi1326@gmail.com</p>
@@ -68,51 +95,55 @@
     <h2>CAREER OBJECTIVE:</h2>
     <p>Secure a responsible career opportunity to fully utilize my training and skills, while making a significant contribution to the success of the company.</p>
 
-    <h2>EDUCATIONAL QUALIFICATIONS:</h2>
-    <table>
-        <tr>
-            <th>Course</th>
-            <th>Institution</th>
-            <th>Duration</th>
-            <th>CGPA</th>
-        </tr>
-        <tr>
-            <td>SSC</td>
-            <td>Z. P. High School, Machanapalli</td>
-            <td>2014-15</td>
-            <td>9.8</td>
-        </tr>
-        <tr>
-            <td>Intermediate</td>
-            <td>Sri Chaitanya Jr Kalasala, Vijayawada</td>
-            <td>2015-17</td>
-            <td>9.77</td>
-        </tr>
-        <tr>
-            <td>B. Tech (Under graduation)</td>
-            <td>Sastra University, Tamil Nadu</td>
-            <td>2018-22</td>
-            <td>7.76</td>
-        </tr>
-        <tr>
-            <td>Master of Science</td>
-            <td>Northern Arizona University, USA</td>
-            <td>2023-23</td>
-            <td>Currently pursuing</td>
-        </tr>
-    </table>
+    <!-- Educational Qualifications Table -->
+    <section>
+        <h2>EDUCATIONAL QUALIFICATIONS:</h2>
+        <table>
+            <tr>
+                <th>Course</th>
+                <th>Institution</th>
+                <th>Duration</th>
+                <th>CGPA</th>
+            </tr>
+            <tr>
+                <td>SSC</td>
+                <td>Z. P. High School, Machanapalli</td>
+                <td>2014-15</td>
+                <td>9.8</td>
+            </tr>
+            <tr>
+                <td>Intermediate</td>
+                <td>Sri Chaitanya Jr Kalasala, Vijayawada</td>
+                <td>2015-17</td>
+                <td>9.77</td>
+            </tr>
+            <tr>
+                <td>B. Tech (Under graduation)</td>
+                <td>Sastra University, Tamil Nadu</td>
+                <td>2018-22</td>
+                <td>7.76</td>
+            </tr>
+            <tr>
+                <td>Master of Science</td>
+                <td>Northern Arizona University, USA</td>
+                <td>2023-23</td>
+                <td>Currently pursuing</td>
+            </tr>
+        </table>
+    </section>
 
     <h2>MAJOR PROJECT:</h2>
     <h3>Title: Accurate Short Text Classification Using Bi-LSTM</h3>
     <p>Description: In recent years, with the rapid development of the internet and social networks, more users began to freely express their opinions on web pages. Therefore, the big data of user comments is generated on the internet. With the explosive increasing of comments, it is difficult to analyze them manually. So, the main objective of the project is mining all these big comment of data through artificial intelligence technology is helpful; for timely understanding of network public opinion and this process is called sentiment analysis, a kind of text classification. To achieve this, we created a model that is trained with five different machine learning algorithms and finally we proved that model trained using bi-LSTM got higher accuracies than the remaining models.</p>
     <p>Technologies used: Recurrent Neural Network (RNN), Long-short term memory (LSTM), Bi-directional Encoder Representation from Transformers (BERT), Support Vector Machine (SVM), Bi-directional Long Short-Term Memory (Bi-LSTM)</p>
 
-    <h2>TECHICAL SKILLS:</h2>
+    <h2>TECHNICAL SKILLS:</h2>
     <ul id="tech-skills">
         <li>Languages: C, Java, Python</li>
         <li>Operating Systems: Windows, Linux</li>
     </ul>
 
+    <!-- Employment Section -->
     <div class="employment">
         <h2>PREVIOUS EMPLOYMENT:</h2>
         <p>Company: Mphasis Private Ltd.</p>
@@ -140,33 +171,23 @@
         <li>Creative and a good team player</li>
     </ul>
 
+    <!-- Declaration -->
     <h2>DECLARATION:</h2>
     <p>I hereby declare that all the details furnished above are true to my knowledge and any discrepancies may be subject to enquiry.</p>
 
     <p>Vamsi Pullagura</p>
     <p>Flagstaff, Arizona United States of America</p>
+    <h2>Addendum:</h2>
+    <p>Throughout the meticulous design process of this webpage, specific styling choices were carefully considered to enhance both aesthetics and user engagement.</p>
 
-    <!-- Addendum -->
-<h2>Addendum:</h2>
-<p>Throughout the meticulous design process of this webpage, specific styling choices were carefully considered to enhance both aesthetics and user engagement.</p>
+    <p>The font sizes were thoughtfully selected to establish a distinct hierarchy and guide the reader seamlessly through the content. The main heading, set at a commanding 2em, serves as a visual anchor, signaling the commencement of the resume. Subsequent headings, including those for career objectives, educational qualifications, and project details, were strategically sized at 1.5em and 1.2em, respectively, maintaining a structured and visually appealing flow.</p>
 
-<p>The font sizes were thoughtfully selected to establish a distinct hierarchy and guide the reader seamlessly through the content. The main heading, set at a commanding 2em, serves as a visual anchor, signaling the commencement of the resume. Subsequent headings, including those for career objectives, educational qualifications, and project details, were strategically sized at 1.5em and 1.2em, respectively, maintaining a structured and visually appealing flow.</p>
+    <p>The primary body text, now enlarged to 1em, strikes a harmonious balance between readability and a modern, professional appearance. This increased size ensures that users can effortlessly absorb the information without any visual strain.</p>
 
-<p>The primary body text, now enlarged to 1em, strikes a harmonious balance between readability and a modern, professional appearance. This increased size ensures that users can effortlessly absorb the information without any visual strain.</p>
+    <p>Color choices remain intentional, with headings retaining a distinctive color palette, creating emphasis and capturing attention for crucial sections. The main text color maintains a classic dark gray (#444), providing optimal contrast against the background color of #d8dfe2, thereby contributing to an enjoyable and effortless reading experience.</p>
 
-<p>Color choices remain intentional, with headings retaining a distinctive color palette, creating emphasis and capturing attention for crucial sections. The main text color maintains a classic dark gray (#444), providing optimal contrast against the background color of #d8dfe2, thereby contributing to an enjoyable and effortless reading experience.</p>
+    <p>Margins and paddings have been meticulously adjusted to uphold a well-organized and visually pleasing layout. The overall design seeks to eliminate clutter and offers ample white space, thereby improving readability and aesthetic appeal.</p>
 
-<p>Margins and paddings have been meticulously adjusted to uphold a well-organized and visually pleasing layout. The overall design seeks to eliminate clutter and offers ample white space, thereby improving readability and aesthetic appeal.</p>
-
-<p>Furthermore, a footer has been thoughtfully incorporated, displaying the last modified date. This addition ensures users are informed about the most recent updates to the content, fostering transparency and enhancing the overall user experience.</p>
-
-<!-- Footer -->
-<footer>
-    <p>Last updated: 
-        <span id="lastModified"></span>
-    </p>
-</footer>
-<script type="text/javascript">
-     var x = document.lastModified;
-     document.getElementById('lastModified').textContent = x;
-</script>
+    <p>Furthermore, a footer has been thoughtfully incorporated, displaying the last modified date. This addition ensures users are informed about the most recent updates to the content, fostering transparency and enhancing the overall user experience.</p>
+</body>
+</html>
