@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Form Validation</title>
+<style>
+    /* CSS styles for the form and its elements */
+    body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f4f4f4;
+    }
+
+    form {
+        width: 300px;
+        padding: 20px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    form div {
+        margin-bottom: 10px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    input {
+        width: calc(100% - 10px); /* Adjusting for padding */
+        padding: 5px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+    }
+
+    .error {
+        color: red;
+        display: block;
+        margin-top: 5px;
+    }
+
+    .validation-message {
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .success-message {
+        color: green;
+        font-weight: bold;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    button {
+        width: 45%;
+        padding: 10px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+
+    button:hover {
+        background-color: #0056b3;
+    }
+
+    #messageContainer {
+        margin-top: 20px;
+    }
+</style>
+</head>
+<body>
+
+<h1 style="text-align: center;">Form Validation</h1>
+
+<!-- Form element with id "myForm" and validation on form submission -->
+<form id="myForm" onsubmit="return validateForm()">
+    <!-- Instructions for the user -->
+    <p class="validation-message">Please fill out the form below:</p>
+    <!-- Input fields and error messages -->
+    <div>
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName">
+        <span id="firstNameError" class="error"></span>
+    </div>
+    <div>
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName">
+        <span id="lastNameError" class="error"></span>
+    </div>
+    <div>
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email">
+        <span id="emailError" class="error"></span>
+    </div>
+    <div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+        <span id="passwordError" class="error"></span>
+    </div>
+    <div>
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword">
+        <span id="confirmPasswordError" class="error"></span>
+    </div>
+    <!-- Submit and reset buttons -->
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button> <!-- Reset button -->
+    <!-- Container for success message -->
+    <div id="messageContainer"></div> <!-- Message container -->
+</form>
+
+<script src="script.js"></script> <!-- Script file for form validation -->
+
+</body>
+</html>
