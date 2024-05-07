@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LightUp</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 class="title">LightUp - The Puzzle Game</h1>
+  <div id="target" class="info">Target: <span id="targetCount">25</span></div>
+  <div id="moves" class="info">Moves: <span id="moveCount">0</span></div>
+  <div id="timer" class="info">Time: <span id="time">0:00</span></div>
+  <div id="board" class="board">
+    <!-- Game board will be generated here -->
+  </div>
+
+  <!-- Addendum section -->
+  <div id="addendum">
+    <h2>Addendum</h2>
+    <ul>
+      <li>In developing the LightUp game, I aimed to create an engaging and visually appealing puzzle experience while ensuring a smooth user interface.</li>
+      <li>My creative choices included implementing smooth transitions and hover effects to enhance the visual experience.</li>
+      <li>Challenges encountered during development included debugging JavaScript logic and ensuring compatibility across different devices and browsers.</li>
+      <li>Insights gained include the importance of iterative development and user testing for refining gameplay and user interface.</li>
+    </ul>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>Last updated: <span id="lastModified"></span></p>
+  </footer>
+  <script type="text/javascript">
+       var x = document.lastModified;
+       document.getElementById('lastModified').textContent = x;
+  </script>
+
+  <!-- LightUp game JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
